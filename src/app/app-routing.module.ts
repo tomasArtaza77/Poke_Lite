@@ -3,7 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
-import { PokemonsComponent } from './components/pokemons/pokemons.component';
+import { PokedexComponent } from './components/pokedex/pokedex.component';
+
 
 const routes: Routes = [
 
@@ -25,8 +26,8 @@ const routes: Routes = [
   },
 
   {
-    path: 'pokemons',
-    component: PokemonsComponent
+    path: 'pokedex',
+    component: PokedexComponent
   },
 
 ];

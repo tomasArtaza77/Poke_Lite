@@ -29,7 +29,7 @@ export class LoginComponent implements OnInit {
 
   logIn(){
     
-    this.router.navigate(['/pokemons']);
+    this.router.navigate(['/pokedex']);
   /*
     const loginData = this.loginForm.value;
     console.log('Data user: ', loginData);

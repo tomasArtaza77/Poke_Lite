@@ -12,6 +12,10 @@ export class ApiPokemonsService {
     console.log("servicio pokemon");
   }
 
+  mostrarMensaje(mensaje:string){
+    alert(mensaje);
+  }
+
   getPokemons(){
     console.log("servicio pokemon");
     return this.http.get(this.url); 

@@ -1,0 +1,19 @@
+.background-color-type {
+    background: -webkit-linear-gradient(180deg, #b97fc9 50%, #b97fc9 50%);
+    background: -ms-linear-gradient(180deg, #b97fc9 50%, #b97fc9 50%);
+    background: -moz-linear-gradient(180deg, #b97fc9 50%, #b97fc9 50%);
+    background: -o-linear-gradient(180deg, #b97fc9 50%, #b97fc9 50%);
+    background: linear-gradient(180deg, #b97fc9 50%, #b97fc9 50%);
+    background-color: #b97fc9;
+    color: #fff;
+}
+
+.background-color-lvl {
+    background: -webkit-linear-gradient(180deg, #0c66cc 50%, #0c66cc 50%);
+    background: -ms-linear-gradient(180deg, #0c66cc 50%, #0c66cc 50%);
+    background: -moz-linear-gradient(180deg, #0c66cc 50%, #0c66cc 50%);
+    background: -o-linear-gradient(180deg, #0c66cc 50%, #0c66cc 50%);
+    background: linear-gradient(180deg, #0c66cc 50%, #0c66cc 50%);
+    background-color: #0c66cc;
+    color: #fff;
+}

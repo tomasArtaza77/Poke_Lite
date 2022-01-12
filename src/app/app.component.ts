@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { PokemonsComponent } from './components/pokemons/pokemons.component';
 import { ApiPokemonsService } from './services/api-pokemons.service';
 import {HttpClient} from '@angular/common/http';
 
