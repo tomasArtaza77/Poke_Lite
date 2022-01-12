@@ -29,8 +29,8 @@ export class LoginComponent implements OnInit {
 
   logIn(){
     
-    this.router.navigate(['/pokedex']);
-  /*
+    //this.router.navigate(['/pokedex']);
+  
     const loginData = this.loginForm.value;
     console.log('Data user: ', loginData);
     this.pokemonApiSvc.postRequest(URLS.login, loginData).subscribe(
@@ -48,7 +48,6 @@ export class LoginComponent implements OnInit {
         console.error(error)
       }
     );
-  */
   }
 
 }
