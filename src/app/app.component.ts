@@ -11,11 +11,4 @@ export class AppComponent {
   title = 'PokeLite';
   url = '/pokedex-api/pokemon';
 
-  constructor(private pokemonApiSvc: ApiPokemonsService){
-    this.pokemonApiSvc.getPokemons().subscribe(resp=>{
-      console.log(resp);
-    });
-  }
-
-
 }

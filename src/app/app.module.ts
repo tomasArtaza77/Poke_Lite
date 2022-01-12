@@ -12,6 +12,8 @@ import { HomeComponent } from './components/home/home.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { PokedexComponent } from './components/pokedex/pokedex.component';
 import { PokemonComponent } from './components/pokemon/pokemon.component';
+import { ModificarPokemonComponent } from './components/modificar-pokemon/modificar-pokemon.component';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import { PokemonComponent } from './components/pokemon/pokemon.component';
     HomeComponent,
     ContactoComponent,
     PokedexComponent,
-    PokemonComponent
+    PokemonComponent,
+    ModificarPokemonComponent
   ],
   imports: [
     BrowserModule,

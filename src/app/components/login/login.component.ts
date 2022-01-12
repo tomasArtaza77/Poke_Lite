@@ -27,17 +27,20 @@ export class LoginComponent implements OnInit {
       
   }
 
+  
+
   logIn(){
     
-    //this.router.navigate(['/pokedex']);
+    this.router.navigate(['/pokedex']);
   
+    /*
     const loginData = this.loginForm.value;
     console.log('Data user: ', loginData);
     this.pokemonApiSvc.postRequest(URLS.login, loginData).subscribe(
       (response: any) => {
         console.log('login api response: ', response)
         if (response.Status === true) {
-          console.log('login api response: ', response.data.token)
+          console.log('login api response: ', response.data.token);
           localStorage.setItem('userName', this.loginForm.value.user);
           localStorage.setItem('authToken', response.data.token);
           this.router.navigate(['/pokemons']);
@@ -48,6 +51,11 @@ export class LoginComponent implements OnInit {
         console.error(error)
       }
     );
+    */
+  }
+
+  logOut(){
+    this.router.navigate(['']);
   }
 
 }

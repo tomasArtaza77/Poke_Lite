@@ -2,7 +2,7 @@
 
 body {
     /*background: linear-gradient(rgba(109, 110, 109, 0.65), rgba(229, 235, 230, 0.65)), url("assets/fondo.jpg");*/ 
-    background: url("assets/fondo.jpg");
+    background: url("assets/pikachuFondo.jpg");
     background-attachment: fixed;
     background-position: center; 
     background-size: cover;

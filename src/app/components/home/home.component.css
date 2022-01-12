@@ -6,7 +6,6 @@
     margin-right: auto;
 }
 
-
 /*
 =====
 DEPENDENCES
@@ -23,8 +22,8 @@ DEPENDENCES
 	--uirLinkTextDecoration: var(--rLinkTextDecoration, none);
 
 	display: var(--uirLinkDisplay) !important;
-	color: var(--uirLinkTextColor) !important;
-	text-decoration: var(--uirLinkTextDecoration) !important;
+	color: var(--blackColor) !important;
+	text-decoration: var(--uirLinkTextDecoraton) !important;
 }
 
 /* The component will reset browser's styles of titles */
@@ -50,10 +49,6 @@ CORE STYLES
 	--uiAnimatedUnderlinePositionX: var(--animatedUnderlinePositionX, left);
 	--uiAnimatedUnderlinePositionY: var(--animatedUnderlinePositionY, bottom);
 
-	/*
-		1. For multi-line animated underline the "inline" value for the display property is compulsory.
-		2. Adds opportunity to create multi-line padding
-	*/
 
 	--rLinkDisplay: inline; /* 1 */
 

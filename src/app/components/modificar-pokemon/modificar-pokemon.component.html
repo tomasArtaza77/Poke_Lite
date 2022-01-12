@@ -1,7 +1,9 @@
 <div class="container">
-    <div class="col" style="text-align: center; margin-top: 10px;"> <h1>{{titulo}}</h1> </div>
+
+    <div class="col" style="text-align: center;"> <h1>{{titulo}}</h1> </div>
       
-    <form class="form-group row" style="margin-top: 10px; margin-bottom: 30px;">
+      <br><br>
+    <form class="form-group row">
          <div class="form-group col-md-3">
            <label for="nombre">Name:</label>
            <input type="text" name="name" id="name" placeholder="Name" class="form-control" [(ngModel)]="cuadroNombre">
@@ -16,13 +18,13 @@
           <label for="cargo">Lvl:</label>
           <input type="text" name="lvl" id="lvl" placeholder="Lvl" class="form-control" [(ngModel)]="cuadroNivel">
         </div>
-  
-        <div class="col-md-3">
-          <button type="submit" class="button-blue" (click)="agregarPokemon()" style="margin-top: 20px;">Add New Pokémon</button>
+                
+        <div class="md-3">
+          <button type="submit" class="btn btn-primary" (click)="pokemonState()" style="margin-top: 25px;">{{btnState}}</button>
+          <!-- <button type="submit" class="btn btn-primary" (click)="deletePokemon()" style="margin-top: 25px; margin-left: 10px;">Delete</button> -->
+          
         </div>
-  
+
     </form>
     
 </div>
-
-<app-pokemon *ngFor="let pokemon of pokemons; let i = index" [pokemonsLista]="pokemon" [indice]="i"></app-pokemon> 

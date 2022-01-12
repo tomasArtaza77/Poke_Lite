@@ -1,19 +1,92 @@
-.background-color-type {
-    background: -webkit-linear-gradient(180deg, #b97fc9 50%, #b97fc9 50%);
-    background: -ms-linear-gradient(180deg, #b97fc9 50%, #b97fc9 50%);
-    background: -moz-linear-gradient(180deg, #b97fc9 50%, #b97fc9 50%);
-    background: -o-linear-gradient(180deg, #b97fc9 50%, #b97fc9 50%);
-    background: linear-gradient(180deg, #b97fc9 50%, #b97fc9 50%);
-    background-color: #b97fc9;
-    color: #fff;
+/*btns*/
+.button-update {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #0cc42a;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
 }
 
-.background-color-lvl {
-    background: -webkit-linear-gradient(180deg, #0c66cc 50%, #0c66cc 50%);
-    background: -ms-linear-gradient(180deg, #0c66cc 50%, #0c66cc 50%);
-    background: -moz-linear-gradient(180deg, #0c66cc 50%, #0c66cc 50%);
-    background: -o-linear-gradient(180deg, #0c66cc 50%, #0c66cc 50%);
-    background: linear-gradient(180deg, #0c66cc 50%, #0c66cc 50%);
-    background-color: #0c66cc;
+.button-update:hover,
+.button-update:focus {
+  background-color: #0de231;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button-update:hover {
+  transform: translateY(-1px);
+}
+
+.button-update:active {
+  background-color: #0de231;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+/*delete btn*/
+.button-delete {
+    align-items: center;
+    background-clip: padding-box;
+    background-color: #e00f08d8;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
     color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+  }
+
+.button-delete:hover,
+.button-delete:focus {
+  background-color: #fa0800;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button-delete:hover {
+  transform: translateY(-1px);
+}
+
+.button-delete:active {
+  background-color: #fa0800;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+/*pokemon info*/
+.pokemon-info{
+
 }
