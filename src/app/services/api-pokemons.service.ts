@@ -1,4 +1,3 @@
-import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Pokemons } from '../pokemons.model';
 
@@ -7,18 +6,16 @@ import { Pokemons } from '../pokemons.model';
 })
 export class ApiPokemonsService {
 
-  url = '/pokedex-api/pokemon';
-
   pokemons: Pokemons[] = [
-    new Pokemons("Pikachu", "Electric", 11000,),
-    new Pokemons("Bulbasaur", "Grass", 3000),
-    new Pokemons("Charmander", "Fire", 2500),
-    new Pokemons("Charizard", "Fire", 22000),
-    new Pokemons("Squirtlea", "Water", 2000),
+    new Pokemons("Pikachu", "Electric", 11000, "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/025.png"),
+    new Pokemons("Bulbasaur", "Grass", 3000, "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png"),
+    new Pokemons("Charmander", "Fire", 2500, "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/004.png"),
+    new Pokemons("Charizard", "Fire", 22000, "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/006.png"),
+    new Pokemons("Squirtlea", "Water", 2000, "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/007.png")
   ];
 
 
-  constructor(private http: HttpClient){
+  constructor(){
     console.log("servicio pokemon");
   }
 
@@ -41,15 +38,6 @@ export class ApiPokemonsService {
 
   deletePokemon(i: number) {
     this.pokemons.splice(i,1);
-  }
-  /*
-  getPokemons(){
-    console.log("servicio pokemon");
-    return this.http.get(this.url); 
-  }
-  */
-  postRequest(url: string, data = {}) {
-    return this.http.post(url, data);
   }
   
 

@@ -9,10 +9,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
-import { ContactoComponent } from './components/contacto/contacto.component';
 import { PokedexComponent } from './components/pokedex/pokedex.component';
 import { PokemonComponent } from './components/pokemon/pokemon.component';
 import { ModificarPokemonComponent } from './components/modificar-pokemon/modificar-pokemon.component';
+import { AboutComponent } from './components/about/about.component';
+
 
 
 @NgModule({
@@ -21,10 +22,10 @@ import { ModificarPokemonComponent } from './components/modificar-pokemon/modifi
     NavbarComponent,
     LoginComponent,
     HomeComponent,
-    ContactoComponent,
     PokedexComponent,
     PokemonComponent,
-    ModificarPokemonComponent
+    ModificarPokemonComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +33,8 @@ import { ModificarPokemonComponent } from './components/modificar-pokemon/modifi
     BrowserAnimationsModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

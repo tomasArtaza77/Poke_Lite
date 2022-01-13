@@ -18,7 +18,9 @@ export class ModificarPokemonComponent implements OnInit {
   cuadroNombre: string = "";
   cuadroNivel: number = 0;
   cuadroTipo: string = "";
+  imagen: string;
   indice: number;
+  
 
   constructor(
     private pokeService: ApiPokemonsService,
@@ -28,11 +30,12 @@ export class ModificarPokemonComponent implements OnInit {
 
   ngOnInit(): void {
     this.indice = Number(this.route.snapshot.params['id']);
-    this.accion = this.route.snapshot.queryParams['accion']; // llamamos al accion del html pokemon
+    this.accion = this.route.snapshot.queryParams['accion'];
     let pokemon: Pokemons = this.pokeService.getPokemons(this.indice);
     this.cuadroNombre = pokemon.nombre;
     this.cuadroTipo = pokemon.tipo;
     this.cuadroNivel = pokemon.nivel;
+    this.imagen = pokemon.img;
 
     if (this.accion == 1) {
       this.btnState = "Update";
@@ -42,22 +45,10 @@ export class ModificarPokemonComponent implements OnInit {
     
   }
 
-  /*
-  updatePokemon(){
-    let pokemon = new Pokemons(this.cuadroNombre, this.cuadroTipo, this.cuadroNivel);
-    this.pokeService.updatePokemon(pokemon, this.indice);
-    this.router.navigate(['/pokedex']);
-  }
-
-  deletePokemon(){
-    this.pokeService.deletePokemon(this.indice);
-    this.router.navigate(['/pokedex']);
-  }
-  */
   pokemonState(){
 
     if (this.accion == 1) {
-      let pokemon = new Pokemons(this.cuadroNombre, this.cuadroTipo, this.cuadroNivel);
+      let pokemon = new Pokemons(this.cuadroNombre, this.cuadroTipo, this.cuadroNivel, this.imagen);
       this.pokeService.updatePokemon(pokemon, this.indice);
       this.router.navigate(['/pokedex']);
     }

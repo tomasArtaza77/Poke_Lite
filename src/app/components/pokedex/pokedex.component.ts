@@ -23,10 +23,11 @@ export class PokedexComponent implements OnInit {
   cuadroNombre: string = "";
   cuadroNivel: number = 0;
   cuadroTipo: string = "";
+  imagen: string = "";
   
 
   agregarPokemon(){
-    let pokemon=new Pokemons(this.cuadroNombre, this.cuadroTipo, this.cuadroNivel);
+    let pokemon=new Pokemons(this.cuadroNombre, this.cuadroTipo, this.cuadroNivel, this.imagen);
     this.pokemons.push(pokemon);
     this.pokeService.mostrarMensaje("Pokemon name: " + pokemon.nombre);
   }

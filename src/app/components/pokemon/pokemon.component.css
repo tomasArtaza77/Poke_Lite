@@ -86,7 +86,8 @@
   transform: translateY(0);
 }
 
-/*pokemon info*/
-.pokemon-info{
-
+/*pokemon img size*/
+.size{
+  width: 40%;
+  display: block;
 }

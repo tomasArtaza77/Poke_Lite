@@ -1,0 +1,21 @@
+p{
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: 1.78;
+    font-style: italic;
+    font-size: 1.5em;
+    color: #222;
+}
+
+.margin{
+	margin-top: 2rem;
+    text-align: center;
+}
+
+.size{
+    width: 40%;
+    display: block;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+}
